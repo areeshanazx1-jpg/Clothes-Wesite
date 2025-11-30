@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment no 1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+      padding: 15px;
+      background-color: rgb(238, 237, 237);
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: black;         
+      font-weight: 500;      
+    }
+
+    ul li a:hover {
+      color: gray;
+    }
+
+    
+      .main {
+  background-color: rgb(235, 231, 231);
+  padding: 15px;
+  text-align: left;
+  margin-top: 20px;   /* ✅ yeh line add karo */
+}
+
+
+    .main h1, .main p {
+      margin: 10px;
+      padding-left: 100px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      padding: 40px 20px;
+    }
+
+    .gallery-grid .item {
+      text-align: center;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      aspect-ratio: 1/1;
+    }
+
+    .gallery-grid .price {
+      margin-top: 6px;
+      font-weight: bold;
+    }
+
+    
+    .footer {
+      background-color: rgb(238, 237, 237);  
+      color: #000000;               
+      text-align: center;        
+      padding: 20px 10px;
+      width: 100%;               
+      min-height: 15vh;          /* jitni height chahi utni */
+    }
+
+    .footer-social a {
+      margin: 0 10px;
+      color: #000000;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      margin: 0 15px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer-copy {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></li>
+    <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+    <li><a href="#">Blogs <i class="fa-solid fa-angle-down"></i></a></li>
+    <li><a href="#">Elements <i class="fa-solid fa-angle-down"></i></a></li>
+  </ul>
+
+  <!-- Page Title -->
+  <div class="main">
+    <h1>Shop</h1>
+    <p>Home / Shop</p>
+  </div>
+  
+  <!-- Product Grid -->
+  <div class="gallery-grid">
+    <div class="item">
+      <img src="pic 1.jpg">
+      <p class="price">Product name<br>$5.36</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 2.jpg">
+      <p class="price">Product name<br>$7.14</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 3.jpg">
+      <p class="price">Product name<br>$8.93</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 4.jpg">
+      <p class="price">Product name<br>$12.50</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 5.jpg">
+      <p class="price">Product name<br>$7.14</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 6.jpg">
+      <p class="price">Product name<br>$5.36</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 7.jpg">
+      <p class="price">Product name<br>$10.71</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 8.jpg">
+      <p class="price">Product name<br>$12.50</p>
+    </div>
+
+    <div class="item">
+      <img src="pic 9.jpg">
+      <p class="price">Product name<br>$14.28</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Contact Us</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-copy">
+      <p>© 2025 Designed and Developed by Areesha Naz. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
